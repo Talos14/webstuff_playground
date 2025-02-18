@@ -1,0 +1,97 @@
+<!-- NOTE FOR WHOEVER SEES THIS: 
+ 1. The menu and order form links go to nowhere, i dont yet know how to do that kind of stuff.
+ 2. Go to checkout does nothing,sorry.
+ 3. This restaurant may or may not derive inspiration from Cluckin Bell.
+ -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Saul's Fried Chicken</title>
+        <header>
+            <img id="header-img" src="https://shorturl.at/8P8BQ" width="1520" height="500" alt="restaurant header image"/>
+            <h1>Saul's Fried Chicken</h1>
+            <nav>
+                <ul>
+                    <li><a href="/menu">Menu</a></li>
+                    <li><a href="/order-form">Order-Form</a></li>
+                </ul>
+            </nav> 
+        </header>
+        <style>
+            body{
+                background-color: bisque;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <section id="menu">
+                <h2>Menu</h2>
+
+                <!-- P.S: If the menu descriptions sound familiar to you, its intentional! -->
+                <article id="option-1">
+                    <img src="https://i.redd.it/xhugbgfoion71.png" alt="fried chicken" id="Lil-clucker">
+                    <h3>Saul's Little Clucker Fried Chicken   $9.99</h3>
+                    <p>For your little clucker or for the little clucker in you.</p>
+                </article>
+                <article id="option-2">
+                    <img src="https://i.pinimg.com/originals/44/a5/0e/44a50e4f1a207404412ce7de46ae4fdf.jpg" alt="fried chicken burger" width="500" height="300" id="big-clucker">
+                    <h3>Saul's Clucking Big Meal Pack $14.99</h3>
+                    <p>Enjoy a delicious Clucking Fillet Burger. For those who like to stay in good shape and full of energy.</p>
+                </article>
+                <article id="option-3">
+                    <img src="https://i.pinimg.com/736x/d4/20/7f/d4207fb0f274eba97e4364efff5a385b.jpg" alt="eww veggie salad" width="500" id="cluckin-salad">
+                    <h3>Saul's Cluckin Salad $24.99</h3>
+                    <p>We are pleased to be obliged to serve you this wonderful health-concious alternative meal.For those who like to stay small.</p> 
+                </article>
+            </section>
+            <section id="order-form">
+                <h2>Place Your Order</h2>
+                <form>
+
+                    <!-- This here, the 0 and 1? 0 means no, 1 means yes. Sorry that's the best i could do at this point :( -->
+                    <label for="option-1">Item I:</label>
+                    <input type="number" id="option-1" min="0" max="1">
+                    <br>
+
+                    <label for="option-2">Item II:</label>
+                    <input type="number" id="option-2" min="0" max="1">
+                    <br>
+
+                    <label for="option-3">Item III:</label>
+                    <input type="number" id="option-3" min="0" max="1">
+                    <br>
+
+                    <h3>Add-ons:</h3>
+                    <input type="checkbox" id="chb-1" name="French Fries" value="Fries">
+                    <label for="chb-1">French Fries</label>
+
+                    <input type="checkbox" id="chb-2" name="Garlic Sauce" value="g-sauce">
+                    <label for="chb-2">Garlic Sauce</label>
+
+                    <input type="checkbox" id="chb-3" name="Cajun Dressing" value="CJ Dressing">
+                    <label for="chb-3">Cajun Dressing</label>
+
+                    <input type="checkbox" id="chb-4" name="Ketchup Sauce Packets" value="ketchup_pack">
+                    <label for="chb-4">Packets of Ketchup</label>
+
+                    <input type="checkbox" id="chb-5" name="Bottle of Water" value="water_bottle">
+                    <label for="chb-5">Mineral Water Bottle</label>
+                    <br>
+
+                    <h3>Special Requests:</h3>
+                    <textarea cols="110"></textarea>
+                    <br>
+
+                    <input type="submit" value="Go To Checkout">
+                </form>
+            </section>
+        </main>
+        <footer>
+            Made with love by Arghya
+        </footer>
+
+    </body>
+</html>
