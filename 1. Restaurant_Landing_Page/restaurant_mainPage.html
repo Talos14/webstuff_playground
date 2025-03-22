@@ -1,16 +1,158 @@
-<!DOCTYPE html>
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://unpkg.com/nes.css@latest/css/nes.min.css"
-      rel="stylesheet"
-    />
-    <title>Saul's Fried Chicken</title>
-  </head>
-  <body>
-    Hello World!
-  </body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Saul's Fried Chicken</title>
+        <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="mainPage.css">
+        <div class="Heading_Container">
+            <img id="banner_mainpage" src="assets/images/Restaurant_Banner.gif" alt="Banner Dis">
+        </div>
+        <div class="Heading">
+            <h1>SAUL'S FRIED CHICKEN!</h1>
+        </div>
+        <div class="subHeading">
+            <h3> Home of the Best Fried Chicken east of New Delhi!</h3>
+        </div>
+        <div class="subHeading_list">
+            <h4>We provide:</h4>
+            <ul>
+                <li id="bfc">The Best Fried Chicken</li>
+                <li id="cozy">Cozy Ambience</li>
+                <li id="vibes">Incomparable Vibes</li>
+            </ul>
+        </div>
+        <div id="scrolldowntext">
+            <h5>Scroll down, for a quick look! =)</h5>
+        </div>
+    </head>
+    <body>
+        <div class="nes-container with-title">
+            <p class="bestsellers">Our Popular Dishes:</p>
+            <div class = "image-gallery">
+                <img src="assets/images/chickenFry.jpg" alt="Chicken Fry">
+                <div class="img-description">Chicken Fry</div>
+            </div>
+            <div class = "image-gallery">
+                <img src="assets/images/chickenAndWaffles.png" alt="Chicken Fry">
+                <div class="img-description">Chicken & Waffles</div>
+            </div>
+            <div class = "image-gallery">
+                <img src="assets/images/iceTea.png" alt="Chicken Fry">
+                <div class="img-description">Ice Tea</div>
+            </div>
+        </div>
+        <div class = "nes-container with-title" id="Customer-Reviews">
+            <p class="bestsellers">Customer Reviews:</p>
+            <div style="display: inline-block; width: 48%; text-align: left; margin-right: 2%;">
+                <div class="nes-container is-dark">
+                    <p>
+                        Emma L. on Feb 25, rated us:
+                        <i class="nes-icon is-small star"></i>
+                        <i class="nes-icon is-small star"></i>
+                        <i class="nes-icon is-small star"></i>
+                        <i class="nes-icon is-small star is-half"></i>
+                        <i class="nes-icon is-small star is-empty"></i>
+                    </p>
+                </div>
+            </div>
+
+            <div style="display: inline-block; text-align: left; width: 48%;">
+                <div class="nes-container is-dark">
+                    <p>
+                        John S. on Mar. 3, rated us:
+                        <i class="nes-icon is-small star"></i>
+                        <i class="nes-icon is-small star"></i>
+                        <i class="nes-icon is-small star"></i>
+                        <i class="nes-icon is-small star"></i>
+                        <i class="nes-icon is-small star is-half"></i>
+                    </p>
+                </div>
+            </div>
+            <div style="display: inline-block; width: 48%; text-align: left; margin-right: 2%; margin-top: 5px;">
+                <div class="nes-container is-dark">
+                    <p>
+                        Arav B. on Mar. 6, rated us:
+                        <i class="nes-icon is-small star"></i>
+                        <i class="nes-icon is-small star"></i>
+                        <i class="nes-icon is-small star"></i>
+                        <i class="nes-icon is-small star"></i>
+                        <i class="nes-icon is-small star is-empty"></i>
+                    </p>
+                </div>
+            </div>
+
+            <div style="display: inline-block; text-align: left; width: 48%; margin-top: 5px;">
+                <div class="nes-container is-dark">
+                    <p>
+                        EliseP. on Mar. 7, rated us:
+                        <i class="nes-icon is-small star"></i>
+                        <i class="nes-icon is-small star"></i>
+                        <i class="nes-icon is-small star"></i>
+                        <i class="nes-icon is-small star is-empty"></i>
+                        <i class="nes-icon is-small star is-empty"></i>
+                    </p>
+                </div>
+            </div>
+            <div style="display: inline-block; width: 48%; text-align: left; margin-right: 2%; margin-top: 5px;">
+                <div class="nes-container is-dark">
+                    <p>
+                        Lee Z. on Mar 11, rated us:
+                        <i class="nes-icon is-small star"></i>
+                        <i class="nes-icon is-small star"></i>
+                        <i class="nes-icon is-small star"></i>
+                        <i class="nes-icon is-small star is-half"></i>
+                        <i class="nes-icon is-small star is-empty"></i>
+                    </p>
+                </div>
+            </div>
+
+            <div style="display: inline-block; text-align: left; width: 48%; margin-top: 5px;">
+                <div class="nes-container is-dark">
+                    <p>
+                        EmmaL. on Mar. 13, rated us:
+                        <i class="nes-icon is-small star"></i>
+                        <i class="nes-icon is-small star"></i>
+                        <i class="nes-icon is-small star"></i>
+                        <i class="nes-icon is-small star"></i>
+                        <i class="nes-icon is-small star"></i>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class = "nes-container with-title" id="Order-section">
+            <p class="bestsellers">Order Today!</p>
+            <section>
+                <button type="button" class="nes-btn is-primary" onclick="document.getElementById('dialog-rounded').showModal();">
+                    Click on me to Order!
+                </button>
+                <dialog class="nes-dialog is-rounded" id="dialog-rounded">
+                    <form method="dialog">
+                        <!-- Close Button -->
+                        <button type="button" class="nes-btn is-error close-btn" onclick="document.getElementById('dialog-rounded').close();">
+                            ×
+                        </button>
+
+                        <p class="title">Hello there :)</p>
+                        <p>Where would you like to go?</p>
+
+                        <menu class="dialog-menu">
+                            <a href="https://example.com/page1" style="margin-right: 5px;">
+                                <button type="button" class="nes-btn is-primary">About</button>
+                            </a>
+                            <a href="https://example.com/page2" style="margin-right: 5px;">
+                                <button type="button" class="nes-btn is-warning">Menu</button>
+                            </a>
+                            <a href="https://example.com/page3">
+                                <button type="button" class="nes-btn is-error">Order Form!</button>
+                            </a>
+                        </menu>
+                    </form>
+                </dialog>
+            </section>
+
+        </div>
+    </body>
 </html>
